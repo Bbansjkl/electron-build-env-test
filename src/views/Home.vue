@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    {{env}}
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
@@ -14,5 +15,8 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
     HelloWorld,
   },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  public env = process.env.VUE_APP_TEST;
+
+}
 </script>

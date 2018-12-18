@@ -5,7 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:build:foo": "vue-cli-service electron:build --mode foo",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
     "vue": "^2.5.17",
@@ -18,7 +22,10 @@
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-plugin-typescript": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
+    "electron": "^2.0.0",
     "typescript": "^3.0.0",
+    "vue-cli-plugin-electron-builder": "^1.0.0-rc.9",
     "vue-template-compiler": "^2.5.17"
-  }
+  },
+  "main": "background.js"
 }
