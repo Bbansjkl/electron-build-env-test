@@ -9,6 +9,7 @@
     "electron:build": "vue-cli-service electron:build",
     "electron:build:foo": "vue-cli-service electron:build --mode foo",
     "electron:serve": "vue-cli-service electron:serve",
+    "electron:serve:foo": "vue-cli-service electron:serve --mode foo",
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
